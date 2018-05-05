@@ -1,6 +1,6 @@
 package store.web;
 
-import store.model.User;
+import store.model.Customer;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -18,7 +18,7 @@ public class SignupController {
     }
 
     @PostMapping("/signup")
-    public String signup(@ModelAttribute User user) {
+    public String signup(@ModelAttribute Customer customer) {
 
 //        todo complete registration
 
