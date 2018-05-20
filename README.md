@@ -1,3 +1,3 @@
 # store
 
-Just for to refresh the memory.
+Just for refresh the memory.
