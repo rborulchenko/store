@@ -29,12 +29,12 @@
         <!--<div class="col s1 #f8bbd0 pink lighten-4">11</div>-->
         <!--<div class="col s1 #fce4ec pink lighten-5">11</div>-->
 
-        <form action="#" th:action="@{/signin}" th:object="${customer}" method="post"
+        <form action="#" th:action="@{/signin}" th:object="${principal}" method="post"
               class="col s10 m6 offset-s1 offset-m3">
 
             <div class="input-field">
-                <input id="username" type="text" th:field="*{username}" class="validate">
-                <label for="username">Username</label>
+                <input id="login" type="text" th:field="*{login}" class="validate">
+                <label for="login">Username</label>
             </div>
             <div class="input-field">
                 <input id="password" type="password" th:field="*{password}" class="validate">
@@ -44,7 +44,7 @@
             </button>
             <br/>
             <br/>
-            <a href="/signup" class="waves-effect waves-light btn-small right col s3">Sign Up</a> <br/>
+            <a th:href="@{/signup}" class="waves-effect waves-light btn-small right col s3">Sign Up</a> <br/>
         </form>
     </div>
 </div>

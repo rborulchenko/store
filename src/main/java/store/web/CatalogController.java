@@ -4,13 +4,15 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class CatalogController {
+public class CatalogController
+{
 
-    @GetMapping("/catalog")
-    public String catalog() {
+  @GetMapping("/catalog")
+  public String catalog()
+  {
 
-        //    todo complete
+    //    todo complete
 
-        return "catalog";
-    }
+    return "catalog";
+  }
 }
